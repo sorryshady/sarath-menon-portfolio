@@ -1,0 +1,33 @@
+.introduction {
+  height: 100svh;
+  width: 100vw;
+  background-color: #141516;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introText{
+  display: flex;
+  color: white;
+  font-size: 42px;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.svg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: calc(100% + 300px);
+}
+
+.svg path{
+  fill: #141516;
+}
