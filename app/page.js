@@ -8,10 +8,14 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
+    document.body.style.overflow = 'hidden'
     setTimeout(() => {
       setIsLoading(false)
       document.body.style.cursor = 'default'
     }, 2000)
+    setTimeout(() => {
+      document.body.style.overflow = 'auto'
+    }, 2500)
   }, [])
 
   return (

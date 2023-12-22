@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from 'react'
 import styles from './Landing.module.css'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import Video from '../Video/Video'
 const Landing = () => {
   const firstText = useRef(null)
   const secondText = useRef(null)
@@ -41,7 +42,13 @@ const Landing = () => {
 
   return (
     <main className={styles.main}>
-      <Image fill={true} alt='backgroundImg' src='/Images/Background2.jpg' />
+      {/* <Image
+        fill={true}
+        alt='backgroundImg'
+        src='/Images/Background1.jpg'
+        priority
+      /> */}
+      <Video />
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
           <p ref={firstText}>Independent Film Maker -</p>

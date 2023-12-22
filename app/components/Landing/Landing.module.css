@@ -1,13 +1,14 @@
 .main{
   position: relative;
   display: flex;
-  height: 100vh;
-  margin-bottom: 100vh;
+  height: 100svh;
+  margin-bottom: 100svh;
   overflow: hidden;
 }
 
 .main img{
   object-fit: cover;
+  object-position: 20% center;
 }
 
 .sliderContainer{
@@ -33,4 +34,16 @@
   position: absolute;
   left: 100%;
   top: 0;
+}
+
+@media (max-width:768px){
+  .main img {
+    object-fit: cover;
+  }
+  .sliderContainer {
+    top: calc(100vh - 260px);
+  }
+  .slider p{
+    font-size: 100px;
+  }
 }

@@ -1,0 +1,25 @@
+.videoContainer {
+  width: 100%;
+  height: 100svh;
+}
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+.muteBtn {
+  z-index: 20;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  cursor: pointer;
+  background: #c9fd74;
+  border: none;
+  padding: 1rem;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

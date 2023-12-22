@@ -1,0 +1,40 @@
+.nav {
+  height: 100%;
+  padding: 100px 40px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.linkContainer {
+  perspective: 120px;
+  perspective-origin:  bottom;
+}
+.link a {
+  color: #000;
+  text-decoration: none;
+  font-size: 40px;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer a{
+  width: 50%;
+  color: #000;
+  text-decoration: none;
+}
+
+@media (max-width: 768px){
+  .nav {
+    padding: 5rem 2rem 2rem;
+  }
+  .link a{
+    font-size: 25px;
+  }
+}
