@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import Image from 'next/image'
+
 import React, { useEffect, useRef } from 'react'
 import styles from './Landing.module.css'
 import gsap from 'gsap'
