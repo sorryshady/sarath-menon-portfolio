@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Filler.module.css'
-const Filler = () => {
-  return <div className={`panel ${styles.filler}`}>Filler</div>
+const Filler = ({ content }) => {
+  return <div className={`panel ${styles.filler}`}>{content}</div>
 }
 
 export default Filler

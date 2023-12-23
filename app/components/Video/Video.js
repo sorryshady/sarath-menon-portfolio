@@ -2,7 +2,6 @@
 import React, { useState } from 'react'
 import styles from './Video.module.css'
 import { HiOutlineSpeakerWave, HiOutlineSpeakerXMark } from 'react-icons/hi2'
-import { motion } from 'framer-motion'
 const Video = () => {
   const [mute, setMute] = useState(true)
   return (
