@@ -19,7 +19,6 @@ const Header = () => {
       window.removeEventListener('resize', changeInner)
     }
   }, [])
-  console.log(inner)
   const variants = {
     open: {
       width: inner > 768 ? 480 : 250,

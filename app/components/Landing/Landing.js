@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import Image from 'next/image'
 import React, { useEffect, useRef } from 'react'
 import styles from './Landing.module.css'
@@ -41,7 +42,7 @@ const Landing = () => {
   }
 
   return (
-    <main className={styles.main}>
+    <main className={`panel ${styles.main}`}>
       {/* <Image
         fill={true}
         alt='backgroundImg'

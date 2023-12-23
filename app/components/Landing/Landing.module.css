@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   height: 100svh;
-  margin-bottom: 100svh;
+  /* margin-bottom: 100svh; */
   overflow: hidden;
 }
 
@@ -13,7 +13,7 @@
 
 .sliderContainer{
   position: absolute;
-  top: calc(100vh - 350px);
+  top: calc(100svh - 350px);
 }
 
 .slider{
@@ -41,7 +41,7 @@
     object-fit: cover;
   }
   .sliderContainer {
-    top: calc(100vh - 260px);
+    top: calc(100svh - 260px);
   }
   .slider p{
     font-size: 100px;

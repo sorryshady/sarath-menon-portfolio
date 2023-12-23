@@ -4,6 +4,8 @@ import Landing from './components/Landing/Landing'
 import PreLoader from './components/PreLoader/PreLoader'
 import {  AnimatePresence } from 'framer-motion'
 import { useState, useEffect } from 'react'
+import Filler from './components/Filler/Filler'
+import SnapScroll from './components/SnapScroll/SnapScroll'
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
 
@@ -23,7 +25,10 @@ export default function Home() {
       <AnimatePresence mode='wait'>
         {isLoading ? <PreLoader /> : null}
       </AnimatePresence>
-      <Landing />
+      <SnapScroll>
+        <Landing />
+        <Filler />
+      </SnapScroll>
     </main>
   )
 }
