@@ -4,8 +4,8 @@
   background: #2d2d2d;
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  gap: 1rem;
-  padding: 1rem;
+  gap: 0.5rem;
+  padding: 0.5rem;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 .column:nth-of-type(1) {
   top: -45%;
@@ -48,22 +48,26 @@
     display: none;
   }
   .column:nth-of-type(1) {
-    top: -80%;
+    top: -50%;
   }
   .column:nth-of-type(2) {
-    top: -55%;
+    top: -40%;
   }
   .column:nth-of-type(3) {
-    top: -80%;
+    top: -50%;
   }
 }
 @media (max-width: 425px){
   .gallery {
     height: 125svh;
-    gap: 0.5rem;
-    padding: 0.5rem;
   }
-  .column {
-    gap: 0.5rem;
+  .column:nth-of-type(1) {
+    top: -55%;
+  }
+  .column:nth-of-type(2) {
+    top: -45%;
+  }
+  .column:nth-of-type(3) {
+    top: -55%;
   }
 }

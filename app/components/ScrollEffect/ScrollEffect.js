@@ -12,7 +12,7 @@ const ScrollEffect = () => {
     target: container,
     offset: ['start end', 'end start'],
   })
-  const y = useTransform(scrollYProgress, [0, 1], [0, height * 2])
+  const y = useTransform(scrollYProgress, [0, 1], [0, height * 1.5])
   const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 1.25])
   return (
     <div ref={container} className={styles.gallery}>
