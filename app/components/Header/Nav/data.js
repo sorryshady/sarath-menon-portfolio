@@ -1,33 +1,29 @@
 export const links = [
   {
-    title: 'Photos',
-    href: '/photos',
+    title: 'Photography',
+    href: '/photography',
   },
   {
-    title: 'Films',
-    href: '/films',
+    title: 'Filmography',
+    href: '/filmography',
   },
   {
-    title: 'Connect',
-    href: '/connect',
+    title: 'Contact',
+    href: '/contact',
   },
 ]
 
 export const footerLinks = [
   {
-    title: 'Facebook',
-    href: '/',
-  },
-  {
-    title: 'Twitter',
-    href: '/',
-  },
-  {
     title: 'Instagram',
     href: '/',
   },
   {
-    title: 'LinkedIn',
+    title: 'sample@sample.com',
+    href: '/',
+  },
+  {
+    title: '+91 0000000000',
     href: '/',
   },
 ]
