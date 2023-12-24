@@ -6,6 +6,8 @@ import {  AnimatePresence } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import Filler from './components/Filler/Filler'
 import SmoothScroll from './components/SmoothScroll/SmoothScroll'
+import ScrollEffect from './components/ScrollEffect/ScrollEffect'
+// import Description from './components/Description/Description'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
@@ -28,6 +30,8 @@ export default function Home() {
       </AnimatePresence>
       <SmoothScroll>
         <Landing />
+        <Filler content='Description' />
+        <ScrollEffect />
         <Filler content='Filler 1' />
         <Filler content='Filler 2' />
       </SmoothScroll>

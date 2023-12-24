@@ -1,24 +1,13 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import styles from './Header.module.css'
 import Button from './Button/Button'
 import { motion, AnimatePresence } from 'framer-motion'
 import Nav from './Nav/Nav'
+import { useWindowSize } from 'rooks'
 
 const Header = () => {
-  const [inner, setInner] = useState(window.innerWidth)
-
-  useEffect(() => {
-    const changeInner = () => {
-      setInner(window.innerWidth)
-    }
-
-    window.addEventListener('resize', changeInner)
-
-    return () => {
-      window.removeEventListener('resize', changeInner)
-    }
-  }, [])
+  const { innerWidth: inner } = useWindowSize()
   const variants = {
     open: {
       width: inner > 768 ? 480 : 250,
