@@ -5,6 +5,7 @@ import styles from './Landing.module.css'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Video from '../Video/Video'
+import { motion } from 'framer-motion'
 const Landing = () => {
   const firstText = useRef(null)
   const secondText = useRef(null)
@@ -41,8 +42,22 @@ const Landing = () => {
     xPercent += 0.05 * direction
   }
 
+  const slideUp = {
+    initial: {
+      y: 300,
+    },
+    enter: {
+      y: 0,
+      transition: { duration: 0.6, ease: [0.33, 1, 0.68, 1], delay: 2.5 },
+    },
+  }
   return (
-    <main className={`panel ${styles.main}`}>
+    <motion.main
+      variants={slideUp}
+      initial='initial'
+      animate='enter'
+      className={styles.main}
+    >
       <Video />
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
@@ -50,7 +65,7 @@ const Landing = () => {
           <p ref={secondText}>Independent Film Maker -</p>
         </div>
       </div>
-    </main>
+    </motion.main>
   )
 }
 

@@ -4,6 +4,9 @@ import Lenis from '@studio-freight/lenis'
 const SmoothScroll = ({ children }) => {
   useEffect(() => {
     setTimeout(() => {
+      window.scrollTo(0, 0)
+    }, 2500)
+    setTimeout(() => {
       const lenis = new Lenis({
         smoothTouch: true,
       })

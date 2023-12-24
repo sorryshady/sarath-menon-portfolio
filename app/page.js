@@ -7,6 +7,8 @@ import { useState, useEffect } from 'react'
 import Filler from './components/Filler/Filler'
 import SmoothScroll from './components/SmoothScroll/SmoothScroll'
 import ScrollEffect from './components/ScrollEffect/ScrollEffect'
+import Contact from './components/Contact/Contact'
+import Timeline from './components/TimeLine/Timeline'
 // import Description from './components/Description/Description'
 
 export default function Home() {
@@ -30,10 +32,11 @@ export default function Home() {
       </AnimatePresence>
       <SmoothScroll>
         <Landing />
-        <Filler content='Description' />
+        <Timeline />
         <ScrollEffect />
         <Filler content='Filler 1' />
-        <Filler content='Filler 2' />
+        <Filler content=' Contact' />
+        {/* <Contact /> */}
       </SmoothScroll>
     </main>
   )
