@@ -11,7 +11,7 @@ const Header = () => {
   const variants = {
     open: {
       width: inner > 768 ? 480 : 250,
-      height: inner > 768 ? 450 : 350,
+      height: inner > 768 ? 350 : 250,
       top: '-10px',
       right: '-10px',
       transition: { duration: 0.75, ease: [0.76, 0, 0.24, 1] },

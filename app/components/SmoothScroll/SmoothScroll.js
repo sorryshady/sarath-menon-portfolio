@@ -4,7 +4,9 @@ import Lenis from '@studio-freight/lenis'
 const SmoothScroll = ({ children }) => {
   useEffect(() => {
     setTimeout(() => {
-      const lenis = new Lenis()
+      const lenis = new Lenis({
+        smoothTouch: true,
+      })
       function raf(time) {
         lenis.raf(time)
         requestAnimationFrame(raf)

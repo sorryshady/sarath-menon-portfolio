@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Nav.module.css'
-import { links, footerLinks } from './data'
+import { links } from './data'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
@@ -65,23 +65,6 @@ const Nav = () => {
                 <Link href={link.href}>{link.title}</Link>
               </motion.div>
             </div>
-          )
-        })}
-      </div>
-      <div className={styles.footer}>
-        {footerLinks.map((link, i) => {
-          return (
-            <motion.a
-              key={`f_{i}`}
-              variants={slideIn}
-              custom={i}
-              initial='initial'
-              animate='animate'
-              exit='exit'
-              href={link.href}
-            >
-              {link.title}
-            </motion.a>
           )
         })}
       </div>

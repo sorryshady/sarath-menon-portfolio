@@ -24,7 +24,7 @@ const Landing = () => {
         scrub: 0.25,
         onUpdate: (e) => (direction = e.direction * -1),
       },
-      x: '-=300px',
+      x: '-=200px',
     })
   }, [])
 
@@ -38,17 +38,11 @@ const Landing = () => {
     gsap.set(firstText.current, { xPercent: xPercent })
     gsap.set(secondText.current, { xPercent: xPercent })
     requestAnimationFrame(animation)
-    xPercent += 0.1 * direction
+    xPercent += 0.05 * direction
   }
 
   return (
     <main className={`panel ${styles.main}`}>
-      {/* <Image
-        fill={true}
-        alt='backgroundImg'
-        src='/Images/Background1.jpg'
-        priority
-      /> */}
       <Video />
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>

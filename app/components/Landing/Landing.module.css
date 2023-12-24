@@ -12,7 +12,7 @@
 
 .sliderContainer{
   position: absolute;
-  top: calc(100svh - 350px);
+  top: calc(100svh - 250px);
 }
 
 .slider{
@@ -24,7 +24,7 @@
   position: relative;
   margin: 0px;
   color: white;
-  font-size: 230px;
+  font-size: 150px;
   font-weight: 500;
   padding-right: 50px;
 }
@@ -40,9 +40,9 @@
     object-fit: cover;
   }
   .sliderContainer {
-    top: calc(100svh - 260px);
+    top: calc(100svh - 180px);
   }
   .slider p{
-    font-size: 100px;
+    font-size: 50px;
   }
 }
