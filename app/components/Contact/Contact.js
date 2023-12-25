@@ -14,6 +14,7 @@ const Contact = () => {
                 alt='Sarath Menon'
                 fill
                 sizes='(100vw, 100vh)'
+                priority
               />
             </div>
             <div className={styles.sectionHeader}>Let&apos;s work together</div>
