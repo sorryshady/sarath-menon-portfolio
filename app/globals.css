@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
+  box-sizing: border-box ;
   overflow: hidden;
   cursor: wait;
   /* scroll-behavior: smooth; */
@@ -15,6 +15,9 @@ body {
   overflow: hidden;
 }
 
+hr {
+  width: 100%;
+}
 @media (max-width: 768px) {
   .section-wrapper {
     padding: 7.2rem 2.4rem;

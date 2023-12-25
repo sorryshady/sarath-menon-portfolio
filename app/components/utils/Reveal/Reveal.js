@@ -4,11 +4,11 @@ import { motion, useInView, useAnimation } from 'framer-motion'
 const Reveal = ({ children }) => {
   const controls = useAnimation()
   const ref = useRef(null)
-  const inView = useInView(ref, { once: true })
+  const inView = useInView(ref)
   const variants = {
     hidden: {
       opacity: 0,
-      y: 75,
+      y: '100%',
     },
     visible: {
       opacity: 1,

@@ -35,7 +35,7 @@ export default function Home() {
         <Timeline />
         <ScrollEffect />
         <Filler content='Filler 1' />
-        <Filler content=' Contact' />
+        <Contact />
         {/* <Contact /> */}
       </SmoothScroll>
     </main>
