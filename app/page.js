@@ -37,7 +37,6 @@ export default function Home() {
         <ScrollEffect />
         <Filler content='Filler 1' />
         <Contact />
-        {/* <Contact /> */}
       </SmoothScroll>
     </main>
   )

@@ -4,6 +4,7 @@ import styles from './Timeline.module.css'
 import Reveal from '../utils/Reveal/Reveal'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import Video from '../Video/Video'
 const Timeline = ({ mainRef }) => {
   gsap.registerPlugin(ScrollTrigger)
   const slider = useRef(null)
@@ -31,9 +32,15 @@ const Timeline = ({ mainRef }) => {
     <>
       <section className={styles.section}>
         <div ref={slider} className={styles.scrollContainer}>
-          <div className={`${styles.blue} panel`}></div>
-          <div className={`${styles.red} panel`}></div>
-          <div className={`${styles.green} panel`}></div>
+          <div className={`${styles.blue} panel`}>
+            <Video />
+          </div>
+          <div className={`${styles.red} panel`}>
+            <Video />
+          </div>
+          <div className={`${styles.green} panel`}>
+            <Video />
+          </div>
         </div>
       </section>
     </>
