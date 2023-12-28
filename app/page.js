@@ -3,7 +3,7 @@ import styles from './page.module.css'
 import Landing from './components/Landing/Landing'
 import PreLoader from './components/PreLoader/PreLoader'
 import {  AnimatePresence } from 'framer-motion'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Filler from './components/Filler/Filler'
 import SmoothScroll from './components/SmoothScroll/SmoothScroll'
 import ScrollEffect from './components/ScrollEffect/ScrollEffect'
@@ -13,6 +13,7 @@ import Timeline from './components/TimeLine/Timeline'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
+  const mainContainer = useRef(null)
 
   useEffect(() => {
     document.body.style.overflow = 'hidden'
@@ -26,13 +27,13 @@ export default function Home() {
   }, [])
 
   return (
-    <main className={styles.main}>
+    <main className={styles.main} ref={mainContainer}>
       <AnimatePresence mode='wait'>
         {isLoading ? <PreLoader /> : null}
       </AnimatePresence>
       <SmoothScroll>
         <Landing />
-        <Timeline />
+        <Timeline mainRef={mainContainer} />
         <ScrollEffect />
         <Filler content='Filler 1' />
         <Contact />

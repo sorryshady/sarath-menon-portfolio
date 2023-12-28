@@ -1,12 +1,22 @@
-.timeline {
-  min-height: 100svh;
+.section {
+  overflow-x: hidden;
+}
+.scrollContainer {
+  width: 300vw !important;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  /* overflow-x: hidden; */
+  flex-wrap: wrap;
 }
-.timeline h2 {
-  text-align: center;
+.scrollContainer div {
+  width: 100vw;
+  height: 100vh;
 }
-.about {
-  width: 40%;
+.blue {
+  background: blue;
+}
+.red {
+  background: red;
+}
+.green {
+  background: green;
 }
