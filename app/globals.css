@@ -21,6 +21,9 @@ body {
 hr {
   width: 100%;
 }
+.pin-spacer {
+  width: 15.5%!important;
+}
 @media (max-width: 768px) {
   .section-wrapper {
     padding: 7.2rem 2.4rem;

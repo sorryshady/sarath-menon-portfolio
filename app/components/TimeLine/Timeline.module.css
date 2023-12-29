@@ -1,22 +1,39 @@
 .section {
-  overflow-x: hidden;
-}
-.scrollContainer {
-  width: 300vw !important;
-  height: 100vh;
+  min-height: 100svh;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2rem;
 }
-.scrollContainer div {
-  width: 100vw;
-  height: 100vh;
+.description {
+  font-size: 1.2rem;
 }
-.blue {
-  background: blue;
+.timelineWrapper {
+  display: flex;
+  gap: 5rem;
+  overflow: hidden;
+  width: fit-content;
 }
-.red {
-  background: red;
+.years {
+  width: fit-content !important;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-.green {
-  background: green;
+.years p {
+  opacity: 0.3;
+  margin: 0;
+}
+.active {
+  opacity: 1!important;
+}
+.timelineDesc {
+  display: flex;
+  flex-direction: column;
+}
+.yearView {
+  height: 60svh;
+  font-size: 1.5rem;
+  font-size: bolder;
 }
