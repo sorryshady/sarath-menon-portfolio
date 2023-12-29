@@ -38,7 +38,7 @@ const Timeline = () => {
         pin: '.yearsRef',
         animation: animation,
         scrub: true,
-        markers: true,
+        // markers: true,
       })
     })
     return () => ctx.revert()

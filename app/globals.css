@@ -22,7 +22,7 @@ hr {
   width: 100%;
 }
 .pin-spacer {
-  width: 15.5%!important;
+  width: 10%!important;
 }
 @media (max-width: 768px) {
   .section-wrapper {
