@@ -9,7 +9,7 @@ const Timeline = () => {
   useEffect(() => {
     const years = document.querySelectorAll('.year')
     const options = {
-      threshold: 0.9,
+      threshold: 0.8,
     }
     const callback = (entries) => {
       entries.forEach((entry) => {
