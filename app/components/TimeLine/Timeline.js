@@ -17,6 +17,7 @@ const Timeline = ({ mainRef }) => {
         ease: 'none',
         scrollTrigger: {
           trigger: slider.current,
+          start: 'top 10%',
           pin: true,
           scrub: 1,
           snap: 1 / (panels.length - 2),
@@ -31,15 +32,42 @@ const Timeline = ({ mainRef }) => {
   return (
     <>
       <section className={styles.section}>
+        <div className={styles.description}>
+          <p>
+            Sarath Menon, a professional filmmaker, screenwriter,
+            cinematographer and photographer, is an alumnus of The London Film
+            School, after completing his undergraduate as a Chemical Engineer
+            from the prestigious BITS Pilani. An Internationally acclaimed
+            artist and visual storyteller, his creations hold meaning beyond the
+            blink of an eye.
+          </p>
+          <p>
+            Brimming with poetic afterthought, Sarath tells stories through
+            visuals and words. His aesthetic compositions and unique lighting
+            makes his visual creations deep and insightful. He captures emotions
+            and conveys them profoundly, leaving you with a tear drop or a smile
+            on your face when he signs off.
+          </p>
+        </div>
+
         <div ref={slider} className={styles.scrollContainer}>
-          <div className={`${styles.blue} panel`}>
-            <Video />
+          <div className={`panel`}>
+            <div className={styles.desc}>
+              <div>2015</div>
+              <div>Debut as Film Writer-Director</div>
+            </div>
           </div>
-          <div className={`${styles.red} panel`}>
-            <Video />
+          <div className={`panel`}>
+            <div className={styles.desc}>
+              <div>2015</div>
+              <div>Debut as Film Writer-Director</div>
+            </div>
           </div>
-          <div className={`${styles.green} panel`}>
-            <Video />
+          <div className={`panel`}>
+            <div className={styles.desc}>
+              <div>2015</div>
+              <div>Debut as Film Writer-Director</div>
+            </div>
           </div>
         </div>
       </section>
