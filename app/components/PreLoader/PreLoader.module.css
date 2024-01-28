@@ -1,0 +1,39 @@
+.introduction {
+  height: 100svh;
+  width: 100vw;
+  font-family: var(--font-raleway-dots);
+  background-color: var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introText {
+  text-align: center;
+  font-family: inherit;
+  color: white;
+  font-size: 42px;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+}
+.introText img {
+  height: 70vh;
+  /* width: 90vw; */
+}
+
+.svg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: calc(100% + 300px);
+}
+
+.svg path {
+  fill: var(--primary);
+}
