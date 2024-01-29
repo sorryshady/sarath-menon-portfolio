@@ -184,71 +184,71 @@ export const helenaImages = [
 ];
 export const kashmirImages = [
   {
-    path: "/Images/photoGallery/Kashmir/image_0.jpg",
+    path: '/Images/photoGallery/Kashmir/image_0.jpg',
 
     id: 1,
   },
   {
-    path: "/Images/photoGallery/Kashmir/image_1.jpg",
+    path: '/Images/photoGallery/Kashmir/image_1.jpg',
 
     id: 2,
   },
   {
-    path: "/Images/photoGallery/Kashmir/image_2.jpg",
+    path: '/Images/photoGallery/Kashmir/image_2.jpg',
 
     id: 3,
   },
   {
-    path: "/Images/photoGallery/Kashmir/image_3.jpg",
+    path: '/Images/photoGallery/Kashmir/image_3.jpg',
 
     id: 4,
   },
   {
-    path: "/Images/photoGallery/Kashmir/image_4.jpg",
+    path: '/Images/photoGallery/Kashmir/image_4.jpg',
 
     id: 5,
   },
   {
-    path: "/Images/photoGallery/Kashmir/image_5.jpg",
+    path: '/Images/photoGallery/Kashmir/image_5.jpg',
 
     id: 6,
   },
   {
-    path: "/Images/photoGallery/Kashmir/image_6.jpg",
+    path: '/Images/photoGallery/Kashmir/image_6.jpg',
 
     id: 7,
   },
   {
-    path: "/Images/photoGallery/Kashmir/image_7.jpg",
+    path: '/Images/photoGallery/Kashmir/image_7.jpg',
 
     id: 8,
   },
   {
-    path: "/Images/photoGallery/Kashmir/image_8.jpg",
+    path: '/Images/photoGallery/Kashmir/image_8.jpg',
 
     id: 9,
   },
   {
-    path: "/Images/photoGallery/Kashmir/image_9.jpg",
+    path: '/Images/photoGallery/Kashmir/image_9.jpg',
 
     id: 10,
   },
   {
-    path: "/Images/photoGallery/Kashmir/image_10.jpg",
+    path: '/Images/photoGallery/Kashmir/image_10.jpg',
 
     id: 11,
   },
   {
-    path: "/Images/photoGallery/Kashmir/image_11.jpg",
+    path: '/Images/photoGallery/Kashmir/image_11.jpg',
 
     id: 12,
   },
   {
-    path: "/Images/photoGallery/Kashmir/image_12.jpg",
+    path: '/Images/photoGallery/Kashmir/image_12.jpg',
 
-    id: 12,
+    id: 13,
   },
-];
+]
 export const lakeImages = [
   {
     path: "/Images/photoGallery/Lake/image_0.jpg",
