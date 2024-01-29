@@ -1,0 +1,35 @@
+.nav {
+  height: 100%;
+  padding: 100px 40px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.linkContainer {
+  perspective: 120px;
+  perspective-origin: bottom;
+}
+.link a {
+  color: var(--background);
+  text-decoration: none;
+  font-size: var(--text-heading);
+  transition: all 0.5s;
+}
+.link:hover a {
+  color: var(--primary-content);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 7rem 2rem;
+  }
+  .link a {
+    font-size: var(--text-subheading);
+  }
+}

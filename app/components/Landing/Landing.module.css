@@ -1,0 +1,13 @@
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.main video {
+  width: 100%;
+  max-height: 90svh;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}

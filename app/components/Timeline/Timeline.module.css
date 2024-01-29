@@ -1,0 +1,105 @@
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  overflow: hidden;
+  position: relative;
+}
+.smallScreen {
+  display: none;
+}
+.readMore {
+  background-color: black;
+  border: none;
+  text-align: center;
+  color: #fff;
+  font-family: inherit;
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  .smallScreen {
+    display: block;
+    max-width: 1000px;
+    margin: 0 2rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    align-items: center;
+    font-size: var(--text-description);
+    line-height: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    display: none;
+  }
+}
+
+.heading {
+  font-size: var(--text-heading);
+  text-align: center;
+}
+.heading h1 {
+  padding-top: calc(60px + 3.6rem);
+  font-weight: bold;
+}
+.description {
+  max-width: 1000px;
+  margin: 5rem auto 0;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-description);
+}
+.abstract {
+  position: absolute;
+  z-index: -1;
+}
+.description p {
+  line-height: 40px;
+  z-index: 3;
+}
+.description p span {
+  font-size: var(--text-subheading);
+  font-weight: bold;
+}
+.readMoreButton {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .readMoreButton {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .heading h1 {
+    padding-top: calc(60px + 2.4rem);
+    font-weight: bold;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .description {
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .description {
+    padding: 0 2rem;
+    flex-direction: column;
+  }
+  .description p span {
+    line-height: 1;
+  }
+}
+@media (max-width: 425px) {
+  .heading {
+    font-size: var(--text-subheading);
+  }
+}

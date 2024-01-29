@@ -1,0 +1,103 @@
+.films {
+  display: none;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  gap: 2rem;
+}
+.filmography {
+  margin-top: -40rem;
+}
+.heading {
+  font-size: var(--text-heading);
+  text-align: center;
+
+  display: none;
+}
+.heading h1 {
+  padding-top: calc(60px + 3.6rem);
+  font-weight: bold;
+}
+.videoWrapper {
+  width: 100vw;
+  height: 100%;
+  padding: 1rem;
+  background-color: var(--background);
+  color: var(--text);
+}
+.videoImage {
+  width: 100%;
+  aspect-ratio: 16 /9;
+  background-color: var(--background);
+  cursor: pointer;
+  position: relative;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.videoImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.videoCopy {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.videoTitle {
+  align-items: center;
+  gap: 1.2rem;
+}
+.videoTitle h4 {
+  font-weight: bold;
+  font-size: var(--text-heading);
+  max-width: calc(100% - 50px);
+}
+.videoDescription {
+  font-weight: 400;
+  font-size: var(--text-subheading);
+}
+.videoDescription span {
+  display: inline-block;
+
+  font-size: var(--text-description);
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--text-);
+}
+.videoDescription span:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .films {
+    display: flex;
+  }
+  .videoTitle h4 {
+    font-size: var(--text-mobile-heading);
+  }
+  .videoDescription {
+    font-size: var(--text-mobile-subheading);
+  }
+  .heading {
+    display: block;
+  }
+}
+
+@media (max-width: 425px) {
+  .videoTitle h4 {
+    font-size: var(--text-mobile-heading);
+  }
+  .videoDescription {
+    font-size: var(--text-mobile-subheading);
+  }
+  .heading {
+    font-size: var(--text-subheading);
+  }
+  .filmography {
+    margin-top: -10rem;
+  }
+}
