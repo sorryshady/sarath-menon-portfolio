@@ -1,38 +1,41 @@
 .contactContainer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   min-height: 50svh;
   color: var(--primary-content);
-  padding-top: calc(60px + 3.6rem);
-}
-@media (max-width: 600px) {
-  .contactContainer {
-    padding-top: calc(60px + 6rem);
-  }
-}
-.insta {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .contactWrapper {
   display: flex;
   gap: 2rem;
-  justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+.contactPhoto {
+  width: 400px;
+  height: auto;
   border-radius: 10px;
   overflow: hidden;
+}
+.contactPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .contactContent {
   display: flex;
   flex-direction: column;
   padding: 3rem;
+}
+.insta {
+  display: flex;
+  flex-direction: row;
 }
 .heading {
   font-size: var(--text-heading);
@@ -51,24 +54,13 @@
 .subHeading a:hover {
   color: var(--text);
 }
-.contactPhoto {
-  width: 400px;
-  height: 500px;
-  border-radius: 10px !important;
-  background-image: url("../../../public/Images/SarathMenon.jpg");
-  background-size: cover;
-  background-position: top;
-  object-fit: cover;
-}
+
 @media (max-width: 1024px) {
   .heading {
     margin-bottom: 3rem;
   }
 }
 @media (max-width: 768px) {
-  .contactContainer {
-    padding: 3rem;
-  }
   .contactPhoto {
     width: 300px;
     height: 400px;
@@ -82,7 +74,7 @@
 }
 @media (max-width: 600px) {
   .contactContent {
-    padding: 5rem 0;
+    padding: 3rem 0;
   }
   .contactWrapper {
     flex-direction: column;

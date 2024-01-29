@@ -15,7 +15,7 @@ const PreLoader = () => {
       document.body.style.overflow = 'auto'
     }, 2000)
     setTimeout(() => {
-      // setIsLoading(false)
+      setIsLoading(false)
       window.scrollTo(0, 0)
     }, 2000)
   }, [])

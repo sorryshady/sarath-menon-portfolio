@@ -81,8 +81,3 @@ a {
 .modal-open {
   overflow: hidden;
 }
-@media (max-width: 768px) {
-  /* .heading {
-    font-size: 35px;
-  } */
-}
