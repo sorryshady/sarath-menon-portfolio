@@ -17,7 +17,7 @@ const Home = () => {
     <>
       <div id='modal'></div>
       <main>
-        {/* <SmoothScroll /> */}
+        <SmoothScroll />
         <Landing />
         <Timeline />
         <Parallax />
