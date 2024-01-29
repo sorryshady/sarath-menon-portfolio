@@ -21,7 +21,7 @@ const Home = () => {
         <Landing />
         <Timeline />
         <Parallax />
-        {/* <Carousel /> */}
+        <Carousel />
         {/* <PhotoLanding /> */}
         {/* <Filmography /> */}
         {/* <VideosMobile /> */}

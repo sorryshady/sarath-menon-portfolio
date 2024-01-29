@@ -37,7 +37,7 @@ export const imagesData1 = [
   },
   {
     id: 10,
-    path: '/Images/scrollGallery/image10.jpeg',
+    path: '/Images/scrollGallery/image10.jpg',
   },
   {
     id: 11,
@@ -45,7 +45,7 @@ export const imagesData1 = [
   },
   {
     id: 12,
-    path: '/Images/scrollGallery/image11.jpeg',
+    path: '/Images/scrollGallery/image13.jpg',
   },
 ]
 
