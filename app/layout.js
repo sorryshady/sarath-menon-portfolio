@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
         <PreLoader />
         <Header />
         {children}
-        <Contact />
+        {/* <Contact /> */}
       </body>
     </html>
   )

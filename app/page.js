@@ -18,14 +18,14 @@ const Home = () => {
       <div id='modal'></div>
       <main>
         {/* <SmoothScroll /> */}
-        <Landing />
+        {/* <Landing />
         <Timeline />
         <Parallax />
         <Carousel />
         <PhotoLanding />
         <Filmography />
         <VideosMobile />
-        <Poetry />
+        <Poetry /> */}
       </main>
     </>
   )

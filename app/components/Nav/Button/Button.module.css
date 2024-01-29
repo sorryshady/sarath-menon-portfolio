@@ -1,7 +1,7 @@
 .button {
   user-select: none;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 30px !important;
   position: absolute;
   top: 0;
@@ -36,10 +36,7 @@
 }
 
 @media (max-width: 768px) {
-  .button {
-    height: 50px;
-    width: 50px;
-  }
+
   .perspectiveText {
     font-size: var(--text-subheading);
     font-weight: bold;
@@ -48,11 +45,16 @@
     font-size: var(--text-subheading);
   }
 }
-@media (max-width: 375) {
+@media (max-width: 425px) {
   .button {
-    height: 50px;
-    width: 50px;
+    width: 40px;
+    height: 40px;
   }
+  .el {
+    font-size: var(--text-mobile-subheading);
+  }
+}
+@media (max-width: 375) {
   .perspectiveText {
     font-size: var(--text-description);
     font-weight: bold;
