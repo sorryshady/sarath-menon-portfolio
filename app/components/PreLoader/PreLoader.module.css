@@ -22,8 +22,8 @@
   z-index: 1;
 }
 .introText img {
-  height: 50vh;
-  width: 30vw;
+  height: auto;
+  width: auto;
 }
 
 .svg {
@@ -36,6 +36,7 @@
 .svg path {
   fill: var(--primary);
 }
+
 @media (max-width: 425px) {
   .introText {
     top: -10%;

@@ -15,7 +15,7 @@ const PreLoader = () => {
       document.body.style.overflow = 'auto'
     }, 2000)
     setTimeout(() => {
-      setIsLoading(false)
+      // setIsLoading(false)
       window.scrollTo(0, 0)
     }, 2000)
   }, [])
@@ -61,8 +61,8 @@ const PreLoader = () => {
                   src='/Images/logo.png'
                   alt='logo'
                   priority
-                  width={500}
-                  height={500}
+                  width={1920}
+                  height={1080}
                   quality={100}
                 />
                 <p>Sarath Menon</p>
