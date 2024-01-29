@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./PreLoader.module.css";
 import { motion, AnimatePresence } from "framer-motion";
 import { animationVariant, paraVariant } from "./anime";
+import Image from 'next/image'
 const PreLoader = () => {
   const [dimension, setDimension] = useState({ width: 0, height: 0 })
   const [isLoading, setIsLoading] = useState(true)
@@ -56,7 +57,14 @@ const PreLoader = () => {
                 initial='initial'
                 animate='animate'
               >
-                <img src='./Images/logo.png'></img>
+                <Image
+                  src='/Images/logo.png'
+                  alt='logo'
+                  priority
+                  width={500}
+                  height={500}
+                  quality={100}
+                />
                 <p>Sarath Menon</p>
               </motion.div>
               <svg className={styles.svg}>
