@@ -1,0 +1,21 @@
+.heading {
+  font-size: var(--text-heading);
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+.heading h1 {
+  padding-top: calc(60px + 3.6rem);
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .heading h1 {
+    padding-top: calc(60px + 2.4rem);
+    font-weight: bold;
+  }
+}
+@media (max-width: 425px) {
+  .heading {
+    font-size: var(--text-subheading);
+  }
+}

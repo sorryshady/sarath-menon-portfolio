@@ -13,11 +13,11 @@ const PreLoader = () => {
     setDimension({ width: window.innerWidth, height: window.innerHeight })
     setTimeout(() => {
       document.body.style.overflow = 'auto'
-    }, 2000)
+    }, 1000)
     setTimeout(() => {
       setIsLoading(false)
       window.scrollTo(0, 0)
-    }, 2000)
+    }, 1000)
   }, [])
 
   const initialPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${

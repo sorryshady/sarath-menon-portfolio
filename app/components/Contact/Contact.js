@@ -6,7 +6,7 @@ import Image from 'next/image'
 import styles from './Contact.module.css'
 const Contact = () => {
   return (
-    <section className={styles.contactContainer} id='contact'>
+    <section className='container' id='contact'>
       <div className={styles.contactWrapper}>
         <div className={styles.contactPhoto}>
           <Image

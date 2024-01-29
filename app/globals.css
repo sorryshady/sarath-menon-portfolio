@@ -2,17 +2,9 @@
   --primary: #0f0f0f;
   --primary-content: #8e8e8e;
   --white: #f0f0f0;
-  --foreground: #fbfbfb;
   --background: #000000;
   --opaque: rgba(17, 17, 17, 0.1);
   --text: #f0efef;
-  --white: #ffffff;
-  --text-xs: 1.6rem;
-  --text-sm: 1.8rem;
-  --text-md: 2.2rem;
-  --text-lg: 3.6rem;
-  --text-xl: 5.6rem;
-  --text-2xl: 9.6rem;
   --text-heading: 40px;
   --text-subheading: 25px;
   --text-description: 15.6px;
@@ -68,15 +60,16 @@ a {
   text-decoration: none;
   color: inherit;
 }
-.heading {
-  text-align: center;
-  font-size: 50px;
-  width: 100%;
-  padding: 2rem 0;
-  color: white;
-  background: transparent;
-  font-weight: bold;
-  margin-top: 5rem;
+.container {
+  max-width: 1200px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+  padding: 0 3rem;
+  overflow: hidden;
+  position: relative;
 }
 .modal-open {
   overflow: hidden;

@@ -19,7 +19,7 @@ const Home = () => {
       <main>
         {/* <SmoothScroll /> */}
         <Landing />
-        {/* <Timeline /> */}
+        <Timeline />
         {/* <Parallax /> */}
         {/* <Carousel /> */}
         {/* <PhotoLanding /> */}
@@ -29,6 +29,6 @@ const Home = () => {
       </main>
     </>
   )
-};
+}
 
 export default Home;
