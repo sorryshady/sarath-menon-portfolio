@@ -24,11 +24,11 @@
   padding: 0 3rem;
   margin: 0 auto;
   columns: 3;
-  column-gap: 15px;
+  column-gap: 5px;
 }
 .box {
   width: 100%;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
   break-inside: avoid;
 }
 .box img {
