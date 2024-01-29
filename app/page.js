@@ -22,8 +22,8 @@ const Home = () => {
         <Timeline />
         <Parallax />
         <Carousel />
-        {/* <PhotoLanding /> */}
-        {/* <Filmography /> */}
+        <PhotoLanding />
+        <Filmography />
         {/* <VideosMobile /> */}
         {/* <Poetry /> */}
       </main>

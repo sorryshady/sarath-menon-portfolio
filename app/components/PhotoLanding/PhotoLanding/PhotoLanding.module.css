@@ -1,40 +1,7 @@
-.container {
-  padding: 3.6rem 0;
-  height: fit-content;
-  background-color: var(--background);
-  color: var(--text);
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  margin: 0 auto;
-  overflow: hidden;
-}
-.poemSection {
-  margin-top: 8rem;
-}
-.heading {
-  font-size: var(--text-heading);
-  text-align: center;
-  width: fit-content;
-  margin: 0 auto;
-}
-.heading h1 {
-  padding-top: calc(60px + 3.6rem);
-  font-weight: bold;
-}
-.header {
-  width: 100%;
-  font-size: var(--text-heading);
-  font-weight: bolder;
-  margin: 3rem;
-}
-
 .content {
   position: relative;
   height: fit-content;
-  width: 90%;
-  margin: auto;
-  padding: 45px 0;
+  width: 100%;
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-auto-rows: min-content;
@@ -42,7 +9,6 @@
   gap: 10px;
   grid-auto-flow: dense;
 }
-
 .box {
   position: relative;
   height: 100%;
@@ -120,10 +86,6 @@
 }
 
 @media (max-width: 768px) {
-  .header {
-    font-size: var(--text-subheading);
-    margin-bottom: 1rem;
-  }
   .after {
     font-size: var(--text-subheading);
   }
@@ -138,24 +100,13 @@
   .after {
     font-size: var(--text-mobile-subheading);
   }
-  .header {
-    font-size: var(--text-mobile-subheading);
-  }
   .box img {
     filter: brightness(85%);
-  }
-  .heading {
-    font-size: var(--text-subheading);
   }
   .content {
     display: block;
   }
   .box {
     margin-bottom: 10px;
-  }
-}
-@media (max-width: 320px) {
-  .header {
-    font-size: var(--text-mobile-description);
   }
 }

@@ -3,26 +3,32 @@ import React from "react";
 import Link from "next/link";
 import styles from "./PhotoLanding.module.css";
 import { photoLandingData } from "./data";
+import Heading from '@/app/utils/Heading/Heading'
+import Image from 'next/image'
 const PhotoLanding = () => {
   return (
     <>
-      <div className={styles.heading} id="photography">
-        <h1>PHOTOGRAPHY</h1>
-      </div>
-      <div className={styles.container}>
+      <Heading text='Photography' id={'photography'} />
+      <section className='container'>
         <div className={styles.content}>
           {photoLandingData.map((item) => (
             <div key={item.title} className={styles.box}>
               <Link href={item.to}>
-                <img src={item.imageLink} alt={item.title} />
+                <Image
+                  src={item.imageLink}
+                  alt={item.title}
+                  width={500}
+                  height={500}
+                  quality={100}
+                />
                 <div className={styles.after}>{item.title}</div>
               </Link>
             </div>
           ))}
         </div>
-      </div>
+      </section>
     </>
-  );
-};
+  )
+}
 
 export default PhotoLanding;
