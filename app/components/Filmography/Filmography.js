@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from './Filmography.module.css'
 import { descriptions } from '../VideoMobile/data'
 import Heading from '@/app/utils/Heading/Heading'
+import VideosMobile from '../VideoMobile/VideosMobile'
 
 const Filmography = () => {
   const [index, setIndex] = useState(0)
@@ -44,6 +45,7 @@ const Filmography = () => {
           ))}
         </div>
       </section>
+      <VideosMobile />
     </>
   )
 }

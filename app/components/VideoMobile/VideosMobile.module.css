@@ -1,5 +1,8 @@
-.films {
+.smallScreen {
   display: none;
+}
+.films {
+  display: flex;
   margin: 0 auto;
   width: 100%;
   position: relative;
@@ -7,23 +10,9 @@
   flex-direction: column;
   gap: 2rem;
 }
-.filmography {
-  margin-top: -40rem;
-}
-.heading {
-  font-size: var(--text-heading);
-  text-align: center;
-
-  display: none;
-}
-.heading h1 {
-  padding-top: calc(60px + 3.6rem);
-  font-weight: bold;
-}
 .videoWrapper {
-  width: 100vw;
+  width: 100%;
   height: 100%;
-  padding: 1rem;
   background-color: var(--background);
   color: var(--text);
 }
@@ -73,17 +62,14 @@
   text-decoration: underline;
 }
 @media (max-width: 768px) {
-  .films {
-    display: flex;
+  .smallScreen {
+    display: block;
   }
   .videoTitle h4 {
     font-size: var(--text-mobile-heading);
   }
   .videoDescription {
     font-size: var(--text-mobile-subheading);
-  }
-  .heading {
-    display: block;
   }
 }
 
@@ -93,11 +79,5 @@
   }
   .videoDescription {
     font-size: var(--text-mobile-subheading);
-  }
-  .heading {
-    font-size: var(--text-subheading);
-  }
-  .filmography {
-    margin-top: -10rem;
   }
 }

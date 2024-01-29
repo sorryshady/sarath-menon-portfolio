@@ -5,17 +5,14 @@ import { descriptions } from "./data";
 
 const VideosMobile = () => {
   return (
-    <section className={styles.filmography}>
-      <div className={styles.heading}>
-        <h1>FILMOGRAPHY</h1>
-      </div>
-      <div id="films" className={styles.films}>
+    <section className={`container ${styles.smallScreen}`}>
+      <div id='films' className={styles.films}>
         {descriptions.map((description) => (
           <VideoMobile key={description.title} {...description} />
         ))}
       </div>
     </section>
-  );
+  )
 };
 
 export default VideosMobile;

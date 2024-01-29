@@ -18,4 +18,8 @@
   .heading {
     font-size: var(--text-subheading);
   }
+  .heading h1 {
+    padding-top: calc(60px + 1.8rem);
+    font-weight: bold;
+  }
 }
