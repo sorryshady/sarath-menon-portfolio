@@ -11,6 +11,7 @@ const Video = () => {
         autoPlay
         muted={true}
         loop
+        controlsList='nodownload'
         src='/Videos/reel.mp4'
       />
     </div>
