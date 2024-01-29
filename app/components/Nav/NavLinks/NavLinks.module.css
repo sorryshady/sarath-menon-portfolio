@@ -1,6 +1,6 @@
 .nav {
   height: 100%;
-  padding: 100px 40px 20px 40px;
+  padding: 60px 40px 20px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,7 +27,7 @@
 
 @media (max-width: 768px) {
   .nav {
-    padding: 7rem 2rem;
+    padding: 6rem 2rem;
   }
   .link a {
     font-size: var(--text-subheading);

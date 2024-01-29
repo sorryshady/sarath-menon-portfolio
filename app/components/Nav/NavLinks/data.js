@@ -1,4 +1,5 @@
 export const links = [
+  { title: 'About', href: '/#about' },
   {
     title: 'Photography',
     href: '/#photography',
