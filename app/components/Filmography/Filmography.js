@@ -2,13 +2,14 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import styles from './Filmography.module.css'
 import { descriptions } from '../VideoMobile/data'
+import Heading from '@/app/utils/Heading/Heading'
 
 const Filmography = () => {
   const [index, setIndex] = useState(0)
   return (
-    <div className={styles.section} id='films'>
-      <div className={styles.mainWrapper}>
-        <div className='heading'>FILMOGRAPHY</div>
+    <>
+      <Heading text={'Filmography'} id={'films'} />
+      <section className={`container ${styles.largeScreen}`}>
         <div className={styles.activeVideo}>
           <iframe
             id='videoIframe'
@@ -42,8 +43,8 @@ const Filmography = () => {
             </div>
           ))}
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   )
 }
 
