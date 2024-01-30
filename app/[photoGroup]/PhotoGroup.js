@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import styles from "./PhotoGroup.module.css";
-import PhotoModal from "./PhotoModal/PhotoModal";
+import Image from 'next/image'
+import styles from './PhotoGroup.module.css'
+import PhotoModal from './PhotoModal/PhotoModal'
 
 const PhotoGroup = ({ photoGroup, photos }) => {
-
   const [src, setSrc] = useState('')
   const [clicked, setClicked] = useState(false)
   const clickHandler = (src) => {
@@ -26,13 +26,14 @@ const PhotoGroup = ({ photoGroup, photos }) => {
           <h1 id='photo'>{photoGroup}</h1>
         </div>
         <div className={styles.content}>
-          {photos.map((item) => (
+          {photos.map((item, index) => (
             <div
-              key={item.id}
+              key={index}
               className={styles.box}
-              onClick={() => clickHandler(item.path)}
+              onClick={() => clickHandler(item)}
             >
-              <img src={item.path} alt={`${item.id}-${photoGroup}-img`} />
+              <Image src={item} alt={`item-{photoGroup}-id`} />
+              {/* <img src={item.path} alt={`${item.id}-${photoGroup}-img`} /> */}
             </div>
           ))}
         </div>
@@ -40,6 +41,6 @@ const PhotoGroup = ({ photoGroup, photos }) => {
       {clicked && <PhotoModal src={src} handleClick={setClicked} />}
     </>
   )
-};
+}
 
 export default PhotoGroup;
