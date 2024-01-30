@@ -5,15 +5,16 @@ import { images } from "./Gallery";
 import Image from "next/image";
 import { useTransform, useScroll, motion } from "framer-motion";
 import { useWindowSize } from 'rooks'
+
 const Parallax = () => {
-  const { innerHeight: height } = useWindowSize();
-  const container = useRef(null);
+  const { innerHeight: height } = useWindowSize()
+  const container = useRef(null)
   const { scrollYProgress } = useScroll({
     target: container,
-    offset: ["start end", "end start"],
-  });
-  const y = useTransform(scrollYProgress, [0, 1], [0, height * 1.5]);
-  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 1.25]);
+    offset: ['start end', 'end start'],
+  })
+  const y = useTransform(scrollYProgress, [0, 1], [0, height * 1.5])
+  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 1.25])
   return (
     <>
       <section ref={container} className={styles.gallery}>
@@ -24,7 +25,7 @@ const Parallax = () => {
       </section>
     </>
   )
-};
+}
 
 const Column = ({ images, y = 0 }) => {
   return (
@@ -36,15 +37,16 @@ const Column = ({ images, y = 0 }) => {
               src={src}
               fill
               alt='image'
-              priority
+              // priority
               sizes='(100vw, 100vh)'
               quality={100}
+              placeholder='blur'
             />
           </div>
         )
       })}
     </motion.div>
-  );
-};
+  )
+}
 
 export default Parallax

@@ -1,52 +1,64 @@
 export const photoLandingData = [
   {
-    title: "Fashion - Helena Antonio",
-    imageLink: "/Images/photoGallery/Potraits/image_2.jpg",
-    to: "/helena",
+    title: 'Fashion - Helena Antonio',
+    to: '/helena',
   },
   {
-    title: "Lake District",
-    imageLink: "/Images/photoGallery/Lake/image_6.jpg",
-    to: "/lake",
+    title: 'Lake District',
+    to: '/lake',
   },
   {
-    title: "Rajasthan",
-    imageLink: "/Images/photoGallery/Rajasthan/image_5.jpg",
-    to: "/rajasthan",
+    title: 'Rajasthan',
+    to: '/rajasthan',
   },
   {
-    title: "Pride",
-    imageLink: "/Images/photoGallery/Pride/image_0.jpg",
-    to: "/pride",
+    title: 'Pride',
+    to: '/pride',
   },
   {
-    title: "Hazrat Nizamuddin Auliya Durgah",
-    imageLink: "/Images/photoGallery/Hazrat/image_4.jpg",
-    to: "/hazrat",
+    title: 'Hazrat Nizamuddin Auliya Durgah',
+    to: '/hazrat',
   },
   {
-    title: "Kashmir",
-    imageLink: "/Images/photoGallery/Kashmir/image_10.jpg",
-    to: "/kashmir",
+    title: 'Kashmir',
+    to: '/kashmir',
   },
   {
-    title: "London",
-    imageLink: "/Images/photoGallery/London/image_3.jpg",
-    to: "/london",
+    title: 'London',
+    to: '/london',
   },
   {
-    title: "Concert",
-    imageLink: "/Images/photoGallery/Concert/image_2.jpg",
-    to: "/concert",
+    title: 'Concert',
+    to: '/concert',
   },
   {
-    title: "Life",
-    imageLink: "/Images/photoGallery/Wildlife/image_0.jpg",
-    to: "/life",
+    title: 'Life',
+    to: '/life',
   },
   {
-    title: "Portraits",
-    imageLink: "/Images/photoGallery/Portrait/image_0.jpg",
-    to: "/portraits",
+    title: 'Portraits',
+    to: '/portraits',
   },
-];
+]
+import Helena from '/public/Images/photoGallery/Potraits/image_2.jpg'
+import Lake from '/public/Images/photoGallery/Lake/image_6.jpg'
+import Rajasthan from '/public/Images/photoGallery/Rajasthan/image_5.jpg'
+import Pride from '/public/Images/photoGallery/Pride/image_0.jpg'
+import Hazrat from '/public/Images/photoGallery/Hazrat/image_4.jpg'
+import Kashmir from '/public/Images/photoGallery/Kashmir/image_10.jpg'
+import London from '/public/Images/photoGallery/London/image_3.jpg'
+import Concert from '/public/Images/photoGallery/Concert/image_2.jpg'
+import Wildlife from '/public/Images/photoGallery/Wildlife/image_0.jpg'
+import Portrait from '/public/Images/photoGallery/Portrait/image_0.jpg'
+export const images = [
+  Helena,
+  Lake,
+  Rajasthan,
+  Pride,
+  Hazrat,
+  Kashmir,
+  London,
+  Concert,
+  Wildlife,
+  Portrait,
+]
