@@ -8,8 +8,8 @@ const Carousel = () => {
     <div className={styles.carouselContainer}>
       <div className={styles.slider}>
         <div className={styles.slidetrackone}>
-          {imagesData1.map((image) => (
-            <div key={image} className={styles.slide}>
+          {imagesData1.map((image, index) => (
+            <div key={index} className={styles.slide}>
               <Image src={image} alt={`Image ${image}`} placeholder='blur' />
             </div>
           ))}
@@ -18,8 +18,8 @@ const Carousel = () => {
 
       <div className={styles.slider}>
         <div className={styles.slidetracktwo}>
-          {imagesData2.map((image) => (
-            <div key={image} className={styles.slide}>
+          {imagesData2.map((image, index) => (
+            <div key={index + 12} className={styles.slide}>
               <Image src={image} alt={`Image ${image}`} placeholder='blur' />
             </div>
           ))}

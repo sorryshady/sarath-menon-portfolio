@@ -3,6 +3,7 @@ import { FaInstagram } from 'react-icons/fa'
 import { LuMail } from 'react-icons/lu'
 import { LuPhone } from 'react-icons/lu'
 import Image from 'next/image'
+import sarath from '/public/Images/SarathMenon.jpg'
 import styles from './Contact.module.css'
 import Heading from '@/app/utils/Heading/Heading'
 const Contact = () => {
@@ -12,14 +13,7 @@ const Contact = () => {
       <section className='container'>
         <div className={styles.contactWrapper}>
           <div className={styles.contactPhoto}>
-            <Image
-              src='/Images/SarathMenon.jpg'
-              alt='Sarath'
-              width={500}
-              height={500}
-              quality={100}
-              priority
-            />
+            <Image src={sarath} alt='Sarath' placeholder='blur' />
           </div>
           <div className={styles.contactContent}>
             <div className={styles.heading}>Let&apos;s work together</div>

@@ -4,19 +4,21 @@ import styles from "./PhotoGroup.module.css";
 import PhotoModal from "./PhotoModal/PhotoModal";
 
 const PhotoGroup = ({ photoGroup, photos }) => {
-  const [src, setSrc] = useState("");
-  const [clicked, setClicked] = useState(false);
+
+  const [src, setSrc] = useState('')
+  const [clicked, setClicked] = useState(false)
   const clickHandler = (src) => {
-    setSrc(src);
-    setClicked(true);
-  };
+    setSrc(src)
+    setClicked(true)
+  }
+
   useEffect(() => {
     if (clicked) {
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = 'hidden'
     } else {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = 'auto'
     }
-  }, [clicked]);
+  }, [clicked])
   return (
     <>
       <div className={styles.container}>
