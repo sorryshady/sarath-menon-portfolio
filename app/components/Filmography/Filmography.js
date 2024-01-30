@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import styles from './Filmography.module.css'
-import { descriptions } from '../VideoMobile/data'
+import { descriptions, thumbnails } from '../VideoMobile/data'
 import Heading from '@/app/utils/Heading/Heading'
 import VideosMobile from '../VideoMobile/VideosMobile'
 
@@ -33,12 +33,10 @@ const Filmography = () => {
               }}
             >
               <Image
-                src={description.thumbnail}
+                src={thumbnails[index]}
                 alt={description.title}
                 className={styles.thumbnail}
-                width={500}
-                height={500}
-                quality={100}
+                placeholder='blur'
               />
               <div className={styles.after}>{description.title}</div>
             </div>

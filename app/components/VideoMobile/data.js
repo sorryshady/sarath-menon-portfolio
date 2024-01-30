@@ -3,7 +3,6 @@ export const descriptions = [
     title: 'The Death of Don Quixote',
     description:
       'The Death of Don Quixote is a period drama about a chaotic film set shooting the life and death of Spanish legend Don Quixote.',
-    thumbnail: '/Images/thumbnails/deathOfDon.webp',
     link: 'https://player.vimeo.com/video/409444661?h=cb437dcf5d&color=ffffff',
     cast: (
       <>
@@ -22,7 +21,6 @@ export const descriptions = [
     title: 'Rajakumaran',
     description:
       'Rajakumaran is a Kerala State Award winning Malayalam Short Film about a mysterious bedtime story.',
-    thumbnail: '/Images/thumbnails/rajakumaran.jpg',
     link: 'https://www.youtube.com/embed/m25ZR6PARLI?si=ErZ6gVwAJKtCF0Pi',
     cast: (
       <>
@@ -41,7 +39,6 @@ export const descriptions = [
     title: 'The Red Ball',
     description:
       'The Red Ball is a short film made as a part of the CSR Campaign for Association of Mentally Handicapped Adults (AMHA), a Non-Profit Organisation based in Thrissur, Kerala, India.',
-    thumbnail: '/Images/thumbnails/redball.jpg',
     link: 'https://www.youtube.com/embed/9qhLq-Y8qFI?si=bSZWlTGxVp8Xwd4y',
     cast: (
       <>
@@ -64,3 +61,8 @@ export const descriptions = [
     ),
   },
 ]
+import deathOfDon from '/public/Images/thumbnails/deathOfDon.webp'
+import rajakumaran from '/public/Images/thumbnails/rajakumaran.jpg'
+import redball from '/public/Images/thumbnails/redball.jpg'
+
+export const thumbnails = [deathOfDon, rajakumaran, redball]
