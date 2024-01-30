@@ -32,7 +32,11 @@ const PhotoGroup = ({ photoGroup, photos }) => {
               className={styles.box}
               onClick={() => clickHandler(item)}
             >
-              <Image src={item} alt={`item-{photoGroup}-id`} />
+              <Image
+                src={item}
+                alt={`item-{photoGroup}-id`}
+                placeholder='blur'
+              />
               {/* <img src={item.path} alt={`${item.id}-${photoGroup}-img`} /> */}
             </div>
           ))}

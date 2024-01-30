@@ -132,14 +132,14 @@ export const lakeImages = [
   lakeImage9,
 ]
 
-import loveImage0 from '/public/Images/photoGallery/Love/image_0.jpg'
-import loveImage1 from '/public/Images/photoGallery/Love/image_1.jpg'
-import loveImage2 from '/public/Images/photoGallery/Love/image_2.jpg'
-import loveImage3 from '/public/Images/photoGallery/Love/image_3.jpg'
-import loveImage4 from '/public/Images/photoGallery/Love/image_4.jpg'
-import loveImage5 from '/public/Images/photoGallery/Love/image_5.jpg'
-import loveImage6 from '/public/Images/photoGallery/Love/image_6.jpg'
-import loveImage7 from '/public/Images/photoGallery/Love/image_7.jpg'
+import loveImage2 from '/public/Images/photoGallery/Pride/image_2.jpg'
+import loveImage3 from '/public/Images/photoGallery/Pride/image_3.jpg'
+import loveImage4 from '/public/Images/photoGallery/Pride/image_4.jpg'
+import loveImage5 from '/public/Images/photoGallery/Pride/image_5.jpg'
+import loveImage6 from '/public/Images/photoGallery/Pride/image_6.jpg'
+import loveImage7 from '/public/Images/photoGallery/Pride/image_7.jpg'
+import loveImage0 from '/public/Images/photoGallery/Pride/image_0.jpg'
+import loveImage1 from '/public/Images/photoGallery/Pride/image_1.jpg'
 
 export const prideImages = [
   loveImage0,
