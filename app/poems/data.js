@@ -1,7 +1,7 @@
 export const data = [
   {
     id: 1,
-    title: "The Air You Breathe",
+    title: 'The Air You Breathe',
     poem: (
       <>
         <p>The air you breathe, The air you breathe</p>
@@ -50,11 +50,10 @@ export const data = [
         <p>Of you and I.</p>
       </>
     ),
-    src: "/Images/poem/img_1.jpg",
   },
   {
     id: 2,
-    title: "You",
+    title: 'You',
     poem: (
       <>
         <p>This is for you</p>
@@ -92,11 +91,10 @@ export const data = [
         <p>And finally live as you.</p>
       </>
     ),
-    src: "/Images/poem/img_2.jpg",
   },
   {
     id: 3,
-    title: "Wrinkles",
+    title: 'Wrinkles',
     poem: (
       <>
         <p>I was a boy and tiny</p>
@@ -140,11 +138,10 @@ export const data = [
         <p>Has left with me</p>
       </>
     ),
-    src: "/Images/poem/img_3.jpg",
   },
   {
     id: 4,
-    title: "Sleep",
+    title: 'Sleep',
     poem: (
       <>
         <p>How do you sleep?</p>
@@ -203,11 +200,10 @@ export const data = [
         <p>In my heart</p>
       </>
     ),
-    src: "/Images/poem/img_4.jpg",
   },
   {
     id: 5,
-    title: "Life",
+    title: 'Life',
     poem: (
       <>
         <p>Young Lola asked her grandfather,</p>
@@ -238,11 +234,10 @@ export const data = [
         <p>To just be breathing.”</p>
       </>
     ),
-    src: "/Images/poem/img_5.jpg",
   },
   {
     id: 6,
-    title: "Sunset",
+    title: 'Sunset',
     poem: (
       <>
         <p>The sun was setting</p>
@@ -311,11 +306,10 @@ export const data = [
         <p>Of the one that set in our lives.</p>
       </>
     ),
-    src: "/Images/poem/img_6.jpg",
   },
   {
     id: 7,
-    title: "Rain",
+    title: 'Rain',
     poem: (
       <>
         <p>When I was woken up</p>
@@ -397,11 +391,10 @@ export const data = [
         <p>Within that mother?</p>
       </>
     ),
-    src: "/Images/poem/img_7.jpg",
   },
   {
     id: 8,
-    title: "Always",
+    title: 'Always',
     poem: (
       <>
         <p>Since when have we known each other?</p>
@@ -464,11 +457,10 @@ export const data = [
         <p>Or have we always?</p>
       </>
     ),
-    src: "/Images/poem/img_8.jpg",
   },
   {
     id: 9,
-    title: "My friend Tony",
+    title: 'My friend Tony',
     poem: (
       <>
         <p>I watched my friend Tony</p>
@@ -512,11 +504,10 @@ export const data = [
         <p>Is my humble suggestion</p>
       </>
     ),
-    src: "/Images/poem/img_9.jpg",
   },
   {
     id: 10,
-    title: "Blood of God",
+    title: 'Blood of God',
     poem: (
       <>
         <p>I bleed from the sky</p>
@@ -540,11 +531,10 @@ export const data = [
         <p>What am I? If not the blood of God.</p>
       </>
     ),
-    src: "/Images/poem/img_10.jpg",
   },
   {
     id: 11,
-    title: "7 Minutes",
+    title: '7 Minutes',
     poem: (
       <>
         <p>My friends have come</p>
@@ -578,11 +568,10 @@ export const data = [
         <p>For my soul does no sin.</p>
       </>
     ),
-    src: "/Images/poem/img_11.jpg",
   },
   {
     id: 12,
-    title: "The Endless Hours",
+    title: 'The Endless Hours',
     poem: (
       <>
         <p>When the pillows crumble</p>
@@ -615,6 +604,33 @@ export const data = [
         <p>A mind that was alive</p>
       </>
     ),
-    src: "/Images/poem/img_12.jpg",
   },
-];
+]
+
+import poem1 from '/public/Images/poem/img_1.jpg'
+import poem2 from '/public/Images/poem/img_2.jpg'
+import poem3 from '/public/Images/poem/img_3.jpg'
+import poem4 from '/public/Images/poem/img_4.jpg'
+import poem5 from '/public/Images/poem/img_5.jpg'
+import poem6 from '/public/Images/poem/img_6.jpg'
+import poem7 from '/public/Images/poem/img_7.jpg'
+import poem8 from '/public/Images/poem/img_8.jpg'
+import poem9 from '/public/Images/poem/img_9.jpg'
+import poem10 from '/public/Images/poem/img_10.jpg'
+import poem11 from '/public/Images/poem/img_11.jpg'
+import poem12 from '/public/Images/poem/img_12.jpg'
+
+export const poemImages = [
+  poem1,
+  poem2,
+  poem3,
+  poem4,
+  poem5,
+  poem6,
+  poem7,
+  poem8,
+  poem9,
+  poem10,
+  poem11,
+  poem12,
+]
