@@ -10,9 +10,25 @@
   background-size: cover;
   background-position: center;
 }
+.video iframe {
+  min-width: 100vw;
+  min-height: 80svh;
+  max-height: 90svh;
+  aspect-ratio: 16 / 9;
+}
 @media (max-width: 1024px){
-  .videoContainer {
-    margin-top: 15rem;
+  .video iframe {
+    min-height: 60svh;
+  }
+}
+@media (max-width: 768px) {
+  .video iframe {
+    min-height: 50svh;
+  }
+}
+@media (max-width: 425px) {
+  .video iframe {
+    min-height: 40svh;
   }
 }
 
