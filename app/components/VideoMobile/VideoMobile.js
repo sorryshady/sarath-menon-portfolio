@@ -2,28 +2,21 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./VideosMobile.module.css";
 import VideoMobileModal from "./VideoMobileModal/VideoMobileModal";
-const VideoMobile = ({ title, description, thumbnail, link, cast }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const VideoMobile = ({ title, description, link, cast, thumbnail }) => {
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <>
       <div className={styles.videoWrapper}>
         <div onClick={() => setIsOpen(true)} className={styles.videoImage}>
-          <Image
-            src={thumbnail}
-            alt={title}
-            width={500}
-            height={500}
-            quality={100}
-            priority
-          />
+          <Image src={thumbnail} alt={title} placeholder='blur' />
         </div>
         <div className={styles.videoCopy}>
           <div className={styles.videoTitle}>
             <h4>{title}</h4>
           </div>
           <p className={styles.videoDescription}>
-            {description}{" "}
-            <span onClick={() => setIsOpen(true)}>Learn more {">"}</span>
+            {description}{' '}
+            <span onClick={() => setIsOpen(true)}>Learn more {'>'}</span>
           </p>
         </div>
       </div>
@@ -36,7 +29,7 @@ const VideoMobile = ({ title, description, thumbnail, link, cast }) => {
         isOpen={isOpen}
       />
     </>
-  );
-};
+  )
+}
 
 export default VideoMobile;
