@@ -1,101 +1,54 @@
+import image1 from '/public/Images/scrollGallery/image1.jpeg'
+import image2 from '/public/Images/scrollGallery/image2.jpeg'
+import image3 from '/public/Images/scrollGallery/image3.jpeg'
+import image4 from '/public/Images/scrollGallery/image4.jpeg'
+import image5 from '/public/Images/scrollGallery/image5.jpeg'
+import image6 from '/public/Images/scrollGallery/image6.jpeg'
+import image7 from '/public/Images/scrollGallery/image7.jpeg'
+import image8 from '/public/Images/scrollGallery/image8.jpeg'
+import image9 from '/public/Images/photoGallery/Lake/image_8.jpg'
+import image10 from '/public/Images/scrollGallery/image10.jpg'
+import image11 from '/public/Images/photoGallery/Potraits/image_6.jpg'
+import image12 from '/public/Images/scrollGallery/image13.jpg'
+
 export const imagesData1 = [
-  {
-    id: 1,
-    path: '/Images/scrollGallery/image1.jpeg',
-  },
-  {
-    id: 2,
-    path: '/Images/scrollGallery/image2.jpeg',
-  },
-  {
-    id: 3,
-    path: '/Images/scrollGallery/image3.jpeg',
-  },
-  {
-    id: 4,
-    path: '/Images/scrollGallery/image4.jpeg',
-  },
-  {
-    id: 5,
-    path: '/Images/scrollGallery/image5.jpeg',
-  },
-  {
-    id: 6,
-    path: '/Images/scrollGallery/image6.jpeg',
-  },
-  {
-    id: 7,
-    path: '/Images/scrollGallery/image7.jpeg',
-  },
-  {
-    id: 8,
-    path: '/Images/scrollGallery/image8.jpeg',
-  },
-  {
-    id: 9,
-    path: '/Images/photoGallery/Lake/image_8.jpg',
-  },
-  {
-    id: 10,
-    path: '/Images/scrollGallery/image10.jpg',
-  },
-  {
-    id: 11,
-    path: '/Images/photoGallery/Potraits/image_6.jpg',
-  },
-  {
-    id: 12,
-    path: '/Images/scrollGallery/image13.jpg',
-  },
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+  image8,
+  image9,
+  image10,
+  image11,
+  image12,
 ]
 
+import image13 from '/public/Images/photoGallery/Potraits/image_9.jpg'
+import image14 from '/public/Images//photoGallery/Concert/image_0.jpg'
+import image15 from '/public/Images/photoGallery/Kashmir/image_11.jpg'
+import image16 from '/public/Images/photoGallery/Pride/image_4.jpg'
+import image17 from '/public/Images/photoGallery/Pride/image_7.jpg'
+import image18 from '/public/Images/photoGallery/Rajasthan/image_29.jpg'
+import image19 from '/public/Images/photoGallery/Rajasthan/image_1.jpg'
+import image20 from '/public/Images/photoGallery/Rajasthan/image_23.jpg'
+import image21 from '/public/Images/photoGallery/London/image_0.jpg'
+import image22 from '/public/Images/photoGallery/Portrait/image_0.jpg'
+import image23 from '/public/Images/photoGallery/Wildlife/image_0.jpg'
+import image24 from '/public/Images/photoGallery/Potraits/image_24.jpg'
 export const imagesData2 = [
-  {
-    id: 1,
-    path: "/Images/photoGallery/Hazrat/image_9.jpg",
-  },
-  {
-    id: 2,
-    path: "/Images/photoGallery/Concert/image_0.jpg",
-  },
-  {
-    id: 3,
-    path: "/Images/photoGallery/Kashmir/image_11.jpg",
-  },
-  {
-    id: 4,
-    path: "/Images/photoGallery/Pride/image_4.jpg",
-  },
-  {
-    id: 5,
-    path: "/Images/photoGallery/Pride/image_7.jpg",
-  },
-  {
-    id: 6,
-    path: "/Images/photoGallery/Rajasthan/image_29.jpg",
-  },
-  {
-    id: 7,
-    path: "/Images/photoGallery/Rajasthan/image_1.jpg",
-  },
-  {
-    id: 8,
-    path: "/Images/photoGallery/Rajasthan/image_23.jpg",
-  },
-  {
-    id: 9,
-    path: "/Images/photoGallery/London/image_0.jpg",
-  },
-  {
-    id: 10,
-    path: "/Images/photoGallery/Portrait/image_0.jpg",
-  },
-  {
-    id: 11,
-    path: "/Images/photoGallery/Wildlife/image_0.jpg",
-  },
-  {
-    id: 12,
-    path: "/Images/photoGallery/Potraits/image_24.jpg",
-  },
-];
+  image13,
+  image14,
+  image15,
+  image16,
+  image17,
+  image18,
+  image19,
+  image20,
+  image21,
+  image22,
+  image23,
+  image24,
+]

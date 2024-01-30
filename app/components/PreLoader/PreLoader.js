@@ -4,6 +4,7 @@ import styles from "./PreLoader.module.css";
 import { motion, AnimatePresence } from "framer-motion";
 import { animationVariant, paraVariant } from "./anime";
 import Image from 'next/image'
+import logo from '/public/Images/logo.png'
 const PreLoader = () => {
   const [dimension, setDimension] = useState({ width: 0, height: 0 })
   const [isLoading, setIsLoading] = useState(true)
@@ -57,14 +58,7 @@ const PreLoader = () => {
                 initial='initial'
                 animate='animate'
               >
-                <Image
-                  src='/Images/logo.png'
-                  alt='logo'
-                  priority
-                  width={1920}
-                  height={1080}
-                  quality={100}
-                />
+                <Image src={logo} alt='logo' priority />
                 <p>Sarath Menon</p>
               </motion.div>
               <svg className={styles.svg}>

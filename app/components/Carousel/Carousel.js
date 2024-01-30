@@ -9,15 +9,8 @@ const Carousel = () => {
       <div className={styles.slider}>
         <div className={styles.slidetrackone}>
           {imagesData1.map((image) => (
-            <div key={image.id} className={styles.slide}>
-              <Image
-                src={image.path}
-                alt={`Image ${image.id}`}
-                width={500}
-                height={500}
-                quality={100}
-                priority
-              />
+            <div key={image} className={styles.slide}>
+              <Image src={image} alt={`Image ${image}`} placeholder='blur' />
             </div>
           ))}
         </div>
@@ -26,15 +19,8 @@ const Carousel = () => {
       <div className={styles.slider}>
         <div className={styles.slidetracktwo}>
           {imagesData2.map((image) => (
-            <div key={image.id} className={styles.slide}>
-              <Image
-                src={image.path}
-                alt={`Image ${image.id}`}
-                width={500}
-                height={500}
-                quality={100}
-                priority
-              />
+            <div key={image} className={styles.slide}>
+              <Image src={image} alt={`Image ${image}`} placeholder='blur' />
             </div>
           ))}
         </div>
