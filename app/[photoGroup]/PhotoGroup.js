@@ -23,7 +23,7 @@ const PhotoGroup = ({ photoGroup, photos }) => {
     <>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h1>{photoGroup}</h1>
+          <h1 id='photo'>{photoGroup}</h1>
         </div>
         <div className={styles.content}>
           {photos.map((item) => (
@@ -39,7 +39,7 @@ const PhotoGroup = ({ photoGroup, photos }) => {
       </div>
       {clicked && <PhotoModal src={src} handleClick={setClicked} />}
     </>
-  );
+  )
 };
 
 export default PhotoGroup;

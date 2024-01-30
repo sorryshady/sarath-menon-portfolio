@@ -8,7 +8,6 @@
   gap: 4rem;
   max-width: 1200px;
   margin: 0 auto;
-  overflow: hidden;
 }
 .content div {
   cursor: pointer;
