@@ -37,7 +37,6 @@ const PhotoGroup = ({ photoGroup, photos }) => {
                 alt={`item-{photoGroup}-id`}
                 placeholder='blur'
               />
-              {/* <img src={item.path} alt={`${item.id}-${photoGroup}-img`} /> */}
             </div>
           ))}
         </div>

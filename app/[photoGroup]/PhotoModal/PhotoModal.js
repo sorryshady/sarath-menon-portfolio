@@ -5,14 +5,7 @@ const PhotoModal = ({ src, handleClick }) => {
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
-        <Image
-          src={src}
-          alt={'photo'}
-          width={1920}
-          height={1080}
-          priority
-          quality={100}
-        />
+        <Image src={src} alt={'photo'} placeholder='blur' />
       </div>
       <div onClick={() => handleClick(false)} className={styles.close}>
         CLOSE
