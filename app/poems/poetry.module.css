@@ -4,6 +4,7 @@
   text-align: center;
   padding-top: 10rem;
   font-family: var(--font-maine);
+  font-style: normal;
   font-size: 30px;
   font-weight: bold;
   background-color: black;
@@ -11,7 +12,7 @@
 }
 
 .title {
-  font-size: 60px;
+  font-size: var(--text-heading);
   margin-bottom: 0.5rem;
   padding-top: 10vh;
 }
@@ -23,7 +24,7 @@
 }
 .poem {
   width: 100vw;
-  font-size: 37px;
+  font-size: 20px;
   margin-top: 4rem;
 }
 
@@ -40,17 +41,6 @@
   object-fit: cover;
   border-radius: 10px;
 }
-@media (max-width: 1440px) {
-  .main > div:nth-child(8) .poem {
-    font-size: 32px;
-  }
-  .main > div:nth-child(5) .poem {
-    font-size: 32px;
-  }
-  .poem {
-    font-size: 40px;
-  }
-}
 @media (max-width: 1024px) {
   .poemContainer {
     flex-direction: column;
@@ -58,65 +48,42 @@
     align-items: center;
   }
   .main > div:nth-child(8) .poem {
-    font-size: 34px;
-  }
-  .main > div:nth-child(5) .poem {
-    font-size: 34px;
+    font-size: 17px;
   }
   .poem {
-    font-size: 50px;
-  }
-  .title {
-    font-size: 60px;
+    font-size: 20px;
   }
 }
 @media (max-width: 768px) {
   .main > div:nth-child(8) .poem {
-    font-size: 30px;
-  }
-  .main > div:nth-child(5) .poem {
-    font-size: 30px;
-  }
-  .title {
-    font-size: 50px;
-  }
-}
-@media (max-width: 426px) {
-  .main > div:nth-child(8) .poem {
-    font-size: 18px;
-  }
-  .main > div:nth-child(5) .poem {
-    font-size: 20px;
-  }
-  .poem {
-    font-size: 27px;
-  }
-  .title {
-    font-size: 50px;
-  }
-}
-@media (max-width: 376px) {
-  .main > div:nth-child(8) .poem {
-    font-size: 16px;
-  }
-  .main > div:nth-child(5) .poem {
-    font-size: 16px;
-  }
-  .poem {
-    font-size: 27px;
-  }
-  .title {
-    font-size: 40px;
-  }
-}
-@media (max-width: 320px) {
-  .main > div:nth-child(8) .poem {
-    font-size: 13px;
+    font-size: 15px;
   }
   .main > div:nth-child(5) .poem {
     font-size: 15px;
   }
   .poem {
-    font-size: 23px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 425px) {
+  .main > div:nth-child(8) .poem {
+    font-size: 9px;
+  }
+  .main > div:nth-child(5) .poem {
+    font-size: 10px;
+  }
+  .poem {
+    font-size: 15px;
+  }
+  .title {
+    font-size: var(--text-mobile-heading);
+  }
+}
+@media (max-width: 320px) {
+  .main > div:nth-child(8) .poem {
+    font-size: 7px;
+  }
+  .main > div:nth-child(5) .poem {
+    font-size: 9px;
   }
 }

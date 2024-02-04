@@ -7,10 +7,7 @@ import Contact from './components/Contact/Contact'
 
 const maine = localFont({
   display: 'swap',
-  src: [
-    { path: '../public/fonts/maine-light-webfont.woff' },
-    { path: '../public/fonts/maine-light-webfont.woff2' },
-  ],
+  src: [{ path: '../public/fonts/maine-light-webfont.woff2', style: 'normal' }],
   variable: '--font-maine',
 })
 

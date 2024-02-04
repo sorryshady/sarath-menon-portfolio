@@ -72,9 +72,6 @@ a {
   overflow: hidden;
   position: relative;
 }
-.container:nth-child(1){
-  max-width: 1200px;
-}
 .modal-open {
   overflow: hidden;
 }
