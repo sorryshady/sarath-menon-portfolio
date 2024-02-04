@@ -26,7 +26,7 @@ const PhotoGroup = ({ photoGroup, photos }) => {
           <h1 id='photo'>{photoGroup}</h1>
         </div>
         <div className={styles.content}>
-          {photos.map((item, index) => (
+          {photos?.map((item, index) => (
             <div
               key={index}
               className={styles.box}
