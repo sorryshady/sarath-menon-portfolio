@@ -1,13 +1,18 @@
 import PreLoader from './components/PreLoader/PreLoader'
-import {
-  Raleway_Dots,
-  Raleway,
-  Petit_Formal_Script,
-  Tangerine,
-} from 'next/font/google'
+import { Raleway_Dots, Raleway, Tangerine } from 'next/font/google'
+import localFont from 'next/font/local'
 import './globals.css'
 import Header from './components/Nav/Header'
 import Contact from './components/Contact/Contact'
+
+const maine = localFont({
+  display: 'swap',
+  src: [
+    { path: '../public/fonts/maine-light-webfont.woff' },
+    { path: '../public/fonts/maine-light-webfont.woff2' },
+  ],
+  variable: '--font-maine',
+})
 
 const raleway = Raleway({
   subsets: ['latin'],
@@ -18,11 +23,6 @@ const raleway_dots = Raleway_Dots({
   subsets: ['latin'],
   weight: '400',
   variable: '--font-raleway-dots',
-})
-const petit = Petit_Formal_Script({
-  subsets: ['latin'],
-  weight: '400',
-  variable: '--font-petit',
 })
 const tangerine = Tangerine({
   subsets: ['latin'],
@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body
-        className={`${raleway.variable} ${raleway_dots.variable} ${petit.variable} ${tangerine.variable}`}
+        className={`${raleway.variable} ${raleway_dots.variable} ${tangerine.variable} ${maine.variable}`}
       >
         <PreLoader />
         <Header />
