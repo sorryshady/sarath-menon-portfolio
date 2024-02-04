@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef } from 'react'
 import styles from "./Parallax.module.css";
 import { images } from "./Gallery";
 import Image from "next/image";
