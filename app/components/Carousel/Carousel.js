@@ -20,7 +20,12 @@ const Carousel = () => {
         <div className={styles.slidetracktwo}>
           {imagesData2.map((image, index) => (
             <div key={index + 12} className={styles.slide}>
-              <Image src={image} alt={`Image ${image}`} placeholder='blur' />
+              <Image
+                src={image}
+                alt={`Image ${image}`}
+                placeholder='blur'
+                priority
+              />
             </div>
           ))}
         </div>

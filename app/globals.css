@@ -41,6 +41,7 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   font-family: var(--font-raleway);
@@ -60,7 +61,7 @@ a {
   color: inherit;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -70,6 +71,9 @@ a {
   padding: 0 3rem;
   overflow: hidden;
   position: relative;
+}
+.container:nth-child(1){
+  max-width: 1200px;
 }
 .modal-open {
   overflow: hidden;
