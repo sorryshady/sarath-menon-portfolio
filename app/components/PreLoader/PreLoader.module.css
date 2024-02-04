@@ -23,6 +23,7 @@
   z-index: 1;
 }
 .introText img {
+  max-height: 50lvh;
   height: auto;
   width: auto;
 }
